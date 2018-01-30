@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+<div class="container ">
+<p>
+  <strong>名前</strong>
+  <%= @diary.name %>
+</p>
+
+<p>
+  <strong>ひとこと</strong>
+  <%= @diary.title %>
+</p>
+
+<%= link_to '編集', edit_diary_path(@diary),class: 'btn btn-primary', :style=>"color:white;" %> 
+<%= link_to '戻る', diaries_path,class: 'btn btn-primary', :style=>"color:white;" %>
+</div>
